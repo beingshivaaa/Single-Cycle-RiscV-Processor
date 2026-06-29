@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_processor_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top_processor_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="74.701 ns"></ZoomEndTime>
+      <Cursor1Time time="75.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="251"></NameColumnWidth>
+      <ValueColumnWidth column_width="59"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="31" />
+   <wvobject fp_name="/top_processor_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/PC" type="array">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/m1/PCSrc" type="logic">
+      <obj_property name="ElementShortName">PCSrc</obj_property>
+      <obj_property name="ObjectShortName">PCSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/a2/PCTarget" type="array">
+      <obj_property name="ElementShortName">PCTarget[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PCTarget[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/Instr" type="array">
+      <obj_property name="ElementShortName">Instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/opcode" type="array">
+      <obj_property name="ElementShortName">opcode[6:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[6:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/funct3" type="array">
+      <obj_property name="ElementShortName">funct3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">funct3[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/funct7" type="array">
+      <obj_property name="ElementShortName">funct7[6:0]</obj_property>
+      <obj_property name="ObjectShortName">funct7[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/ImmSrc" type="array">
+      <obj_property name="ElementShortName">ImmSrc[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ImmSrc[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/ALUSrc" type="logic">
+      <obj_property name="ElementShortName">ALUSrc</obj_property>
+      <obj_property name="ObjectShortName">ALUSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/RegWrite" type="logic">
+      <obj_property name="ElementShortName">RegWrite</obj_property>
+      <obj_property name="ObjectShortName">RegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/MemWrite" type="logic">
+      <obj_property name="ElementShortName">MemWrite</obj_property>
+      <obj_property name="ObjectShortName">MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/CU/Jump" type="logic">
+      <obj_property name="ElementShortName">Jump</obj_property>
+      <obj_property name="ObjectShortName">Jump</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/CU/Branch" type="logic">
+      <obj_property name="ElementShortName">Branch</obj_property>
+      <obj_property name="ObjectShortName">Branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/ALUControl" type="array">
+      <obj_property name="ElementShortName">ALUControl[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUControl[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/RD1" type="array">
+      <obj_property name="ElementShortName">RD1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RD1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/RD2" type="array">
+      <obj_property name="ElementShortName">RD2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RD2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/SrcB" type="array">
+      <obj_property name="ElementShortName">SrcB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SrcB[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/ImmExt" type="array">
+      <obj_property name="ElementShortName">ImmExt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ImmExt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/ALUResult" type="array">
+      <obj_property name="ElementShortName">ALUResult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUResult[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/ReadData" type="array">
+      <obj_property name="ElementShortName">ReadData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/m3/ResultSrc" type="array">
+      <obj_property name="ElementShortName">ResultSrc[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ResultSrc[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/Result" type="array">
+      <obj_property name="ElementShortName">Result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Result[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/Zero" type="logic">
+      <obj_property name="ElementShortName">Zero</obj_property>
+      <obj_property name="ObjectShortName">Zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/im/A" type="array">
+      <obj_property name="ElementShortName">A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem" type="array">
+      <obj_property name="ElementShortName">mem[0:63][31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem[0:63][31:0]</obj_property>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[0]" type="array">
+         <obj_property name="ElementShortName">[0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[1]" type="array">
+         <obj_property name="ElementShortName">[1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[2]" type="array">
+         <obj_property name="ElementShortName">[2][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[3]" type="array">
+         <obj_property name="ElementShortName">[3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[4]" type="array">
+         <obj_property name="ElementShortName">[4][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[5]" type="array">
+         <obj_property name="ElementShortName">[5][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[6]" type="array">
+         <obj_property name="ElementShortName">[6][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[7]" type="array">
+         <obj_property name="ElementShortName">[7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[8]" type="array">
+         <obj_property name="ElementShortName">[8][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[9]" type="array">
+         <obj_property name="ElementShortName">[9][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[10]" type="array">
+         <obj_property name="ElementShortName">[10][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[11]" type="array">
+         <obj_property name="ElementShortName">[11][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[12]" type="array">
+         <obj_property name="ElementShortName">[12][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[13]" type="array">
+         <obj_property name="ElementShortName">[13][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[14]" type="array">
+         <obj_property name="ElementShortName">[14][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[15]" type="array">
+         <obj_property name="ElementShortName">[15][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[16]" type="array">
+         <obj_property name="ElementShortName">[16][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[16][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[17]" type="array">
+         <obj_property name="ElementShortName">[17][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[17][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[18]" type="array">
+         <obj_property name="ElementShortName">[18][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[18][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[19]" type="array">
+         <obj_property name="ElementShortName">[19][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[19][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[20]" type="array">
+         <obj_property name="ElementShortName">[20][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[20][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[21]" type="array">
+         <obj_property name="ElementShortName">[21][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[21][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[22]" type="array">
+         <obj_property name="ElementShortName">[22][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[22][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[23]" type="array">
+         <obj_property name="ElementShortName">[23][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[23][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[24]" type="array">
+         <obj_property name="ElementShortName">[24][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[24][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[25]" type="array">
+         <obj_property name="ElementShortName">[25][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[25][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[26]" type="array">
+         <obj_property name="ElementShortName">[26][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[26][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[27]" type="array">
+         <obj_property name="ElementShortName">[27][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[27][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[28]" type="array">
+         <obj_property name="ElementShortName">[28][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[28][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[29]" type="array">
+         <obj_property name="ElementShortName">[29][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[29][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[30]" type="array">
+         <obj_property name="ElementShortName">[30][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[30][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[31]" type="array">
+         <obj_property name="ElementShortName">[31][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[31][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[32]" type="array">
+         <obj_property name="ElementShortName">[32][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[32][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[33]" type="array">
+         <obj_property name="ElementShortName">[33][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[33][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[34]" type="array">
+         <obj_property name="ElementShortName">[34][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[34][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[35]" type="array">
+         <obj_property name="ElementShortName">[35][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[35][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[36]" type="array">
+         <obj_property name="ElementShortName">[36][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[36][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[37]" type="array">
+         <obj_property name="ElementShortName">[37][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[37][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[38]" type="array">
+         <obj_property name="ElementShortName">[38][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[38][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[39]" type="array">
+         <obj_property name="ElementShortName">[39][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[39][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[40]" type="array">
+         <obj_property name="ElementShortName">[40][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[40][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[41]" type="array">
+         <obj_property name="ElementShortName">[41][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[41][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[42]" type="array">
+         <obj_property name="ElementShortName">[42][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[42][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[43]" type="array">
+         <obj_property name="ElementShortName">[43][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[43][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[44]" type="array">
+         <obj_property name="ElementShortName">[44][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[44][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[45]" type="array">
+         <obj_property name="ElementShortName">[45][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[45][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[46]" type="array">
+         <obj_property name="ElementShortName">[46][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[46][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[47]" type="array">
+         <obj_property name="ElementShortName">[47][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[47][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[48]" type="array">
+         <obj_property name="ElementShortName">[48][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[48][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[49]" type="array">
+         <obj_property name="ElementShortName">[49][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[49][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[50]" type="array">
+         <obj_property name="ElementShortName">[50][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[50][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[51]" type="array">
+         <obj_property name="ElementShortName">[51][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[51][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[52]" type="array">
+         <obj_property name="ElementShortName">[52][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[52][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[53]" type="array">
+         <obj_property name="ElementShortName">[53][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[53][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[54]" type="array">
+         <obj_property name="ElementShortName">[54][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[54][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[55]" type="array">
+         <obj_property name="ElementShortName">[55][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[55][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[56]" type="array">
+         <obj_property name="ElementShortName">[56][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[56][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[57]" type="array">
+         <obj_property name="ElementShortName">[57][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[57][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[58]" type="array">
+         <obj_property name="ElementShortName">[58][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[58][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[59]" type="array">
+         <obj_property name="ElementShortName">[59][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[59][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[60]" type="array">
+         <obj_property name="ElementShortName">[60][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[60][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[61]" type="array">
+         <obj_property name="ElementShortName">[61][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[61][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[62]" type="array">
+         <obj_property name="ElementShortName">[62][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[62][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[63]" type="array">
+         <obj_property name="ElementShortName">[63][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[63][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[0]" type="array">
+         <obj_property name="ElementShortName">[0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[1]" type="array">
+         <obj_property name="ElementShortName">[1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[2]" type="array">
+         <obj_property name="ElementShortName">[2][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[3]" type="array">
+         <obj_property name="ElementShortName">[3][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[4]" type="array">
+         <obj_property name="ElementShortName">[4][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[5]" type="array">
+         <obj_property name="ElementShortName">[5][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[6]" type="array">
+         <obj_property name="ElementShortName">[6][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[7]" type="array">
+         <obj_property name="ElementShortName">[7][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[8]" type="array">
+         <obj_property name="ElementShortName">[8][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[8][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[9]" type="array">
+         <obj_property name="ElementShortName">[9][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[9][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[10]" type="array">
+         <obj_property name="ElementShortName">[10][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[10][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[11]" type="array">
+         <obj_property name="ElementShortName">[11][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[11][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[12]" type="array">
+         <obj_property name="ElementShortName">[12][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[12][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[13]" type="array">
+         <obj_property name="ElementShortName">[13][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[13][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[14]" type="array">
+         <obj_property name="ElementShortName">[14][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[14][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[15]" type="array">
+         <obj_property name="ElementShortName">[15][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[15][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[16]" type="array">
+         <obj_property name="ElementShortName">[16][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[16][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[17]" type="array">
+         <obj_property name="ElementShortName">[17][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[17][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[18]" type="array">
+         <obj_property name="ElementShortName">[18][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[18][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[19]" type="array">
+         <obj_property name="ElementShortName">[19][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[19][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[20]" type="array">
+         <obj_property name="ElementShortName">[20][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[20][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[21]" type="array">
+         <obj_property name="ElementShortName">[21][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[21][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[22]" type="array">
+         <obj_property name="ElementShortName">[22][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[22][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[23]" type="array">
+         <obj_property name="ElementShortName">[23][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[23][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[24]" type="array">
+         <obj_property name="ElementShortName">[24][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[24][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[25]" type="array">
+         <obj_property name="ElementShortName">[25][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[25][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[26]" type="array">
+         <obj_property name="ElementShortName">[26][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[26][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[27]" type="array">
+         <obj_property name="ElementShortName">[27][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[27][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[28]" type="array">
+         <obj_property name="ElementShortName">[28][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[28][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[29]" type="array">
+         <obj_property name="ElementShortName">[29][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[29][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[30]" type="array">
+         <obj_property name="ElementShortName">[30][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[30][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[31]" type="array">
+         <obj_property name="ElementShortName">[31][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[31][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[32]" type="array">
+         <obj_property name="ElementShortName">[32][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[32][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[33]" type="array">
+         <obj_property name="ElementShortName">[33][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[33][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[34]" type="array">
+         <obj_property name="ElementShortName">[34][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[34][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[35]" type="array">
+         <obj_property name="ElementShortName">[35][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[35][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[36]" type="array">
+         <obj_property name="ElementShortName">[36][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[36][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[37]" type="array">
+         <obj_property name="ElementShortName">[37][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[37][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[38]" type="array">
+         <obj_property name="ElementShortName">[38][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[38][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[39]" type="array">
+         <obj_property name="ElementShortName">[39][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[39][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[40]" type="array">
+         <obj_property name="ElementShortName">[40][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[40][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[41]" type="array">
+         <obj_property name="ElementShortName">[41][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[41][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[42]" type="array">
+         <obj_property name="ElementShortName">[42][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[42][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[43]" type="array">
+         <obj_property name="ElementShortName">[43][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[43][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[44]" type="array">
+         <obj_property name="ElementShortName">[44][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[44][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[45]" type="array">
+         <obj_property name="ElementShortName">[45][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[45][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[46]" type="array">
+         <obj_property name="ElementShortName">[46][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[46][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[47]" type="array">
+         <obj_property name="ElementShortName">[47][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[47][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[48]" type="array">
+         <obj_property name="ElementShortName">[48][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[48][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[49]" type="array">
+         <obj_property name="ElementShortName">[49][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[49][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[50]" type="array">
+         <obj_property name="ElementShortName">[50][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[50][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[51]" type="array">
+         <obj_property name="ElementShortName">[51][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[51][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[52]" type="array">
+         <obj_property name="ElementShortName">[52][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[52][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[53]" type="array">
+         <obj_property name="ElementShortName">[53][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[53][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[54]" type="array">
+         <obj_property name="ElementShortName">[54][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[54][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[55]" type="array">
+         <obj_property name="ElementShortName">[55][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[55][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[56]" type="array">
+         <obj_property name="ElementShortName">[56][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[56][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[57]" type="array">
+         <obj_property name="ElementShortName">[57][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[57][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[58]" type="array">
+         <obj_property name="ElementShortName">[58][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[58][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[59]" type="array">
+         <obj_property name="ElementShortName">[59][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[59][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[60]" type="array">
+         <obj_property name="ElementShortName">[60][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[60][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[61]" type="array">
+         <obj_property name="ElementShortName">[61][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[61][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[62]" type="array">
+         <obj_property name="ElementShortName">[62][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[62][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[63]" type="array">
+         <obj_property name="ElementShortName">[63][31:0]</obj_property>
+         <obj_property name="ObjectShortName">[63][31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/im/RD" type="array">
+      <obj_property name="ElementShortName">RD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/dm/mem[0][16]" type="logic">
+      <obj_property name="ElementShortName">[16]</obj_property>
+      <obj_property name="ObjectShortName">[16]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/rf/WD3" type="array">
+      <obj_property name="ElementShortName">WD3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WD3[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_processor_tb/dut/DP/rf/reg_file" type="array">
+      <obj_property name="ElementShortName">reg_file[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_file[31:0][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>
