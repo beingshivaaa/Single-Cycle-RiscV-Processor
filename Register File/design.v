@@ -20,6 +20,6 @@ end
 
 //Asynchronous Read
 assign RD1= (A1==0) ? 32'b0:reg_file[A1];
-assign RD2= (A2==1) ? 32'b0:reg_file[A2];
+assign RD2= (A2==0) ? 32'b0:reg_file[A2];
 
 endmodule

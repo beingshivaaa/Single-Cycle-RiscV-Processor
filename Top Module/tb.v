@@ -17,7 +17,7 @@ initial begin
     reset = 1;
 
     // Hold reset for a few cycles
-    #20;
+    #10;
     reset = 0;
 
     // Run processor
