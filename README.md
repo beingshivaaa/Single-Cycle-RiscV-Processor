@@ -1,28 +1,27 @@
-# Single-Cycle RISC-V Processor in Verilog
+# Single-Cycle RISC-V Processor with GNU Toolchain Integration
 
-## Overview
+A **32-bit Single-Cycle RISC-V Processor** implemented in Verilog HDL based on *Digital Design and Computer Architecture: RISC-V Edition* by Sarah Harris and David Harris.
 
-This project implements a 32-bit Single-Cycle RISC-V Processor in Verilog HDL based on the architecture described in *Digital Design and Computer Architecture: RISC-V Edition* by Sarah Harris and David Harris.
-
-The processor supports instruction fetch, decode, execute, memory access, and write-back operations within a single clock cycle. The design was simulated and verified using Xilinx Vivado.
+Unlike conventional educational implementations where instructions are manually hardcoded into the instruction memory, this project integrates the **GNU RISC-V Toolchain**, enabling assembly programs to be compiled into machine code and automatically loaded into the processor for simulation.
 
 ---
 
 ## Features
 
-* 32-bit RISC-V Architecture
-* Single-Cycle Datapath
-* Modular Verilog Design
-* Register File with 32 Registers
-* Instruction Memory
-* Data Memory
-* Immediate Extension Unit
-* Arithmetic Logic Unit (ALU)
-* Main Decoder
-* ALU Decoder
-* Program Counter Logic
-* Branch and Jump Support
-* Result Write-Back Logic
+### Processor Architecture
+
+- 32-bit RV32I Single-Cycle Processor
+- Modular Verilog Design
+- Separate Instruction and Data Memory
+- 32 × 32-bit Register File
+- Immediate Generation Unit
+- ALU
+- Main Decoder
+- ALU Decoder
+- Program Counter Logic
+- Branch Target Computation
+- Memory Read/Write Support
+- Simulation verified using Xilinx Vivado
 
 ---
 
@@ -30,111 +29,204 @@ The processor supports instruction fetch, decode, execute, memory access, and wr
 
 ### R-Type
 
-* ADD
-* SUB
-* AND
-* OR
-* SLT
+- ADD
+- SUB
+- AND
+- OR
+- SLT
 
 ### I-Type
 
-* ADDI
+- ADDI
+- LW
 
-### Memory Instructions
+### S-Type
 
-* LW
-* SW
+- SW
 
-### Branch Instructions
+### B-Type
 
-* BEQ
+- BEQ
 
-### Jump Instructions
+### J-Type
 
-* JAL
+- JAL
 
 ---
 
-## Datapath Components
+# GNU Toolchain Integration
 
-* Program Counter
-* PC+4 Adder
-* PC Target Adder
-* Instruction Memory
-* Register File
-* Immediate Generator
-* ALU
-* Data Memory
-* ALUSrc Multiplexer
-* PCSrc Multiplexer
-* ResultSrc Multiplexer
-* Control Unit
+Instead of manually writing hexadecimal machine instructions inside the instruction memory module, this project uses the **GNU RISC-V Toolchain** to automatically generate executable machine code.
+
+### Workflow
+
+```
+Assembly Program (.s)
+        │
+        ▼
+GNU RISC-V Assembler
+        │
+        ▼
+Object File (.o)
+        │
+        ▼
+GNU Linker
+        │
+        ▼
+Executable (.elf)
+        │
+        ▼
+objcopy / objdump
+        │
+        ▼
+Machine Code (.hex)
+        │
+        ▼
+Instruction Memory ($readmemh)
+        │
+        ▼
+Single-Cycle RISC-V Processor
+```
+
+---
+
+## Advantages of the Toolchain
+
+- Eliminates manual hexadecimal instruction entry
+- Supports larger assembly programs
+- Faster software testing
+- Simplifies debugging
+- Mimics an actual processor development workflow
+- Enables rapid verification using different assembly programs
+
+---
+
+## Instruction Memory
+
+The instruction memory is initialized using Verilog's `$readmemh` system task.
+
+```verilog
+initial begin
+    $readmemh("program.hex", mem);
+end
+```
+
+The generated `program.hex` file is automatically loaded during simulation.
+
+---
+
+## Datapath Overview
+
+```
+                  Program Counter
+                        │
+                        ▼
+               Instruction Memory
+                        │
+                        ▼
+                  Control Unit
+                        │
+                        ▼
+                 Register File
+                        │
+                        ▼
+                       ALU
+                        │
+              ┌─────────┴─────────┐
+              ▼                   ▼
+        Data Memory          PC Update Logic
+              │
+              ▼
+          Write Back
+```
+
+---
+
+## Verification
+
+The processor was verified using multiple assembly programs generated through the GNU RISC-V Toolchain.
+
+Verification included:
+
+- Arithmetic Instructions
+- Logical Instructions
+- Memory Operations
+- Branch Instructions
+- Jump Instructions
+- Register Write-Back
+- Data Memory Read/Write
+
+Waveforms were analyzed in Xilinx Vivado to verify correct processor operation.
 
 ---
 
 ## Project Structure
 
-```text
+```
 ├── Program Counter
 ├── Instruction Memory
+├── Data Memory
 ├── Register File
-├── Imm Extend
-├── Arithmetic Logic Unit
+├── ALU
+├── Immediate Generator
 ├── Main Decoder
 ├── ALU Decoder
-├── ALU Control
-├── Data Memory
-├── MUX ALUSrc
-├── MUX PCSrc
-├── MUX ResultSrc
-├── Data Path
-├── top_processor.v
-└── Testbenches
+├── Control Unit
+├── Datapath
+├── Top Processor
+├── Testbench
+├── program.s
+├── program.hex
+└── GNU Toolchain Scripts
 ```
-
-## Example Program Executed
-
-```assembly
-addi x1, x0, 5
-addi x2, x0, 10
-add  x3, x1, x2
-sw   x3, 0(x0)
-```
-
-Expected Result:
-
-```text
-x1 = 5
-x2 = 10
-x3 = 15
-MEM[0] = 15
-```
-
-Simulation results confirmed successful execution of the above program.
 
 ---
 
 ## Tools Used
 
-* Verilog HDL
-* Xilinx Vivado 2025.1
-* GTKWave (during early verification)
-* Visual Studio Code
-
----
-
-## Reference
-
-Sarah Harris and David Harris,
-*Digital Design and Computer Architecture: RISC-V Edition*
+- Verilog HDL
+- GNU RISC-V Toolchain
+- Xilinx Vivado
+- Visual Studio Code
+- Git
+- GitHub
 
 ---
 
 ## Future Improvements
 
-* 5-Stage Pipelined Processor
-* Hazard Detection Unit
-* Forwarding Unit
-* RISC-V RV32I Instruction Support
-* FPGA Implementation
-* Performance Evaluation and Benchmarking
+- 5-Stage Pipeline Implementation
+- Hazard Detection
+- Data Forwarding
+- Branch Prediction
+- Secure Memory Encryption
+- AES-Based Hardware Security
+- Memory-Mapped Peripherals
+
+---
+
+## References
+
+- David Harris & Sarah Harris, *Digital Design and Computer Architecture: RISC-V Edition*
+- RISC-V Unprivileged ISA Specification
+
+---
+
+## Author
+
+**Y. Shiva Rao**
+
+B.Tech Electronics and Communication Engineering
+
+National Institute of Technology Silchar
+
+---
+
+## Project Highlights
+
+- ✔ 32-bit Single-Cycle RISC-V Processor
+- ✔ Modular Verilog RTL Design
+- ✔ GNU RISC-V Toolchain Integration
+- ✔ Automatic Instruction Memory Initialization
+- ✔ Assembly-to-Hardware Workflow
+- ✔ Functional Verification using Xilinx Vivado
